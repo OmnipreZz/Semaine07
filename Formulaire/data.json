@@ -1,0 +1,19 @@
+{
+    "client1": {
+        "nom" : "john",
+        "prenom" : "rambo",
+        "age" : "35ans",
+        "profession" : "guerrier",
+        "email" : "john.rambo@gfail.com",
+        "tel" : "0945253647"
+    },
+
+    "client2": {
+        "nom" : "arsene",
+        "prenom" : "lapin",
+        "age" : "67ans",
+        "profession" : "voleur",
+        "email" : "arsene.lapin@gfail.com",
+        "tel" : "02733647381"
+    }
+}
