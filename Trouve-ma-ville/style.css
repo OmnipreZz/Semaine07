@@ -1,0 +1,14 @@
+#page {
+
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+.contain {
+    width: 300px;
+}
+
+button {
+    margin-bottom: 20px;
+}
