@@ -15,5 +15,14 @@
         "profession" : "voleur",
         "email" : "arsene.lapin@gfail.com",
         "tel" : "02733647381"
+    },
+
+    "client3": {
+        "nom" : "jean",
+        "prenom" : "bond",
+        "age" : "45ans",
+        "profession" : "agent secret",
+        "email" : "007.bond@world.com",
+        "tel" : "009 007 35628"
     }
 }
