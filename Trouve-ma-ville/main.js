@@ -22,5 +22,3 @@ function itineraire() {
         $("#itin").html("La distance entre Saint-Gaudens et Toulouse est de : " + dist + "Km" + "<br>" + "Temps du trajet : " + time);
     });
 }
-
-
