@@ -1,5 +1,5 @@
 
-/*var req = new XMLHttpRequest();
+var req = new XMLHttpRequest();
 req.open('GET', "data.json");
 req.responseType = 'json';
 req.send();
@@ -22,7 +22,7 @@ req.onload = function () {
         });
         $(".message").html(client)
     }
-}*/
+}
 
 
 /*$.getJSON("data.json", function(form) {
@@ -55,7 +55,7 @@ xhr.onreadystatechange = function () {
 });*/
 
 
-var req = new XMLHttpRequest();
+/*var req = new XMLHttpRequest();
 req.open("GET", "data.json", true);
 req.send();
 req.onreadystatechange = function () {
@@ -67,7 +67,7 @@ req.onreadystatechange = function () {
         });
         document.getElementsByClassName("message")[0].innerHTML = html;
 };
-};
+};*/
 
 
 
