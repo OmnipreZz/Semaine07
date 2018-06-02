@@ -9,24 +9,25 @@ function valide() {
     } else {
         sex = "Femme";
     }
-    var obj = { "nom": $("#firstN").val(), 
-                "prenom": $("#lastN").val(),
+    var obj = { "nom": $("#firstName").val(), 
+                "prenom": $("#lastName").val(),
                 "login": $("#userId").val(),
                 "sexe": sex,
                 "mdp": $("#pass").val(),
                 "born": $("#birth").val(),
                 "ville": $("#city").val(),
                 "email": $("#mail").val(),
-                "web": $("#webs").val(),
-                "tel": $("#telN").val(),
-                "color": $("#col").val(),
+                "web": $("#web").val(),
+                "tel": $("#tel").val(),
+                "color": $("#color").val(),
                 "loisir": $("#hob").val() };
     localStorage.setItem("data", JSON.stringify(obj));
+    console.log("data")
     
 };
 
 
-function get(){
-    var stock = localStorage.getItem("data");
-    console.log(JSON.parse(stock));
-}
+
+var stock = JSON.parse(localStorage.getItem("data"));
+
+$("#message").html("Bonjour " + stock.nom + " " + stock.prenom );

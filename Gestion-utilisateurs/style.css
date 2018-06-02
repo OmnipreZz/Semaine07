@@ -44,3 +44,8 @@ h1 {
 span {
   margin-left: -125px;
 }
+
+#message {
+  text-align: center;
+  font-size: 50px;
+}
