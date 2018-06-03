@@ -3,13 +3,12 @@
 var sex;
 
 function valide() {
-    console.log("coucou");
     if ($(":input")[3].checked) {
         sex = "Homme";
     } else {
         sex = "Femme";
     }
-    var obj = { "nom": $("#firstName").val(), 
+    var obj = { "nom": $("#firstName").val(),
                 "prenom": $("#lastName").val(),
                 "login": $("#userId").val(),
                 "sexe": sex,
@@ -21,13 +20,16 @@ function valide() {
                 "tel": $("#tel").val(),
                 "color": $("#color").val(),
                 "loisir": $("#hob").val() };
-    localStorage.setItem("data", JSON.stringify(obj));
-    console.log("data")
-    
+    localStorage.setItem("data", JSON.stringify(obj)); 
 };
 
-
-
+var gender;
 var stock = JSON.parse(localStorage.getItem("data"));
 
-$("#message").html("Bonjour " + stock.nom + " " + stock.prenom );
+if (stock.sexe == "Homme") {
+    gender = "Monsieur";
+} else {
+    gender = "Madame";
+}
+
+$("#message").html("Bonjour " + gender + " " + stock.nom + " " + stock.prenom );

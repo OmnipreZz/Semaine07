@@ -15,52 +15,52 @@
     <form action="bienvenue.html">
         <div>
             <label for="firstName">Nom:</label>
-            <input type="text" id="firstName" name="nom">
+            <input type="text" id="firstName" required name="nom">
         </div>
         <div>
             <label for="lastName">Prenom:</label>
-            <input type="text" id="lastName" name="prenom">
+            <input type="text" id="lastName" required name="prenom">
         </div>
         <div>
             <label for="userId">Login:</label>
-            <input type="text" id="userId" name="login" placeholder="Entrez un pseudo">
+            <input type="text" id="userId" required name="login" placeholder="Entrez un pseudo">
         </div>
         <div>
             <label for="sexe">Sexe:</label>
-            <input type="radio" name="sex" value="on"><span>Homme</span>
-            <input type="radio" name="sex" value="on"><span>Femme</span>
+            <input type="radio" name="sex" required value="on"><span>Homme</span>
+            <input type="radio" name="sex" required value="on"><span>Femme</span>
         </div>
         <div>
             <label for="pass">Mot de passe:</label>
-            <input type="password" id="pass" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <input type="password" id="pass" required name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
         </div>
         <div>
             <label for="birth">Date de naissance:</label>
-            <input type="date" id="birth" name="anniversaire">
+            <input type="date" id="birth" required name="anniversaire">
         </div>
         <div>
             <label for="city">Ville:</label>
-            <input type="text" id="city" name="ville">
+            <input type="text" id="city" required name="ville">
         </div>
         <div>
             <label for="mail">Mail:</label>
-            <input type="email" id="mail" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            <input type="email" id="mail" required name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
         </div>
         <div>
             <label for="web">Site Web:</label>
-            <input type="url" id="web" value="http://" name="website">
+            <input type="url" id="web" required value="http://" name="website">
         </div>
         <div>
             <label for="tel">Tel:</label>
-            <input type="tel" id="tel" name="telNumber" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">
+            <input type="tel" id="tel" required name="telNumber" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">
         </div>
         <div>
             <label for="color">Couleur:</label>
-            <input type="color" id="color" value="#ECECEC" name="textcolor">
+            <input type="color" id="color" required value="#ECECEC" name="textcolor">
         </div>
         <div>
             <label for="hob">Hobbies:</label>
-            <textarea id="hob" name="hobbies"></textarea>
+            <textarea maxlength="200" id="hob" required name="hobbies"></textarea>
         </div>
         <div>
             <button onclick="valide()">Valider</button>
